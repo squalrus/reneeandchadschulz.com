@@ -1,12 +1,12 @@
 {
-    "name": "sitename",
-    "subdomain": "site",
+    "name": "reneeandchadschulz",
+    "subdomain": "reneeandchadschulz",
     "domains": [
-        "sitename.com",
-        "www.sitename.com"
+        "reneeandchadschulz.com",
+        "www.reneeandchadschulz.com"
     ],
     "scripts": {
-        "start": "server.js"
+        "start": "node server.js"
     },
     "version": "0.0.1",
     "engines": {
@@ -14,6 +14,6 @@
     },
     "dependencies": {
         "express": "3.2.4",
-        "ejs": "0.8.4",
+        "ejs": "0.8.4"
     }
 }
