@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:900);
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+@import url(http://fonts.googleapis.com/css?family=Life+Savers:700);
+
+@font-ampersand:    'Oleo Script Swash Caps', cursive;
+@font-chad:         'Raleway', sans-serif;
+@font-renee:        'Life Savers', cursive;
+@font-schulz:       'Raleway', sans-serif;
+
+@font-racs:         'Life Savers', cursive;
+@font-standard:     arial, helvetica, sans-serif;
+
+@byte-blue:         rgb(199, 219, 225);
+@unique-gray:       rgb(203, 201, 204); // #D3CABD
+@realist-beige:     rgb(211, 202, 189);
+
+@import '_mixins';
+
+@import '_reset';
+@import '_main';
+@import '_layout';
+
+@import '_mixins';
+
+@media screen and (min-width: 960px) {
+    .container { width: 960px; }
+}
+@media screen and (min-width: 650px) and (max-width: 959px) {
+    .container {
+        margin: 0 2%;
+        width: 96%;
+    }
+}
+@media screen and (max-width: 649px) {
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 2.4em;
+        width: 280px;
+    }
+        .header-ampersand {
+            margin-left: -40px;
+            top: -20px;
+        }
+        .header-chad {
+            text-shadow: 0px 0px 0px darken(@realist-beige, 15%);
+            }
+        .header-renee {
+            text-shadow: 0px 0px 0px darken(@realist-beige, 15%);
+        }
+        .header-schulz {
+            letter-spacing: 36px;
+        }
+
+    h2 {
+        font-size: 1.3em;
+        text-shadow: 0px 0px 0px darken(#F4F4F4, 15%);
+    }
+
+    .container {
+        margin: 0 2%;
+        width: 96%;
+    }
+}
