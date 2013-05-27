@@ -19,9 +19,13 @@ function resizeVideo() {
         vWidth = wWidth - 40;
         vHeight = vWidth * ( 1 / vRatio );
 
-        v.width = vWidth;
-        v.height = vHeight;
-        v.style.left = 20 + 'px';
+        try {
+            v.width = vWidth;
+            v.height = vHeight;
+            v.style.left = 20 + 'px';
+        } catch( event ){
+
+        }
     }
 
     // Update positioning
@@ -30,8 +34,17 @@ function resizeVideo() {
     v.style.zIndex = 9999;
 }
 
-window.addEventListener( 'resize', function( event ){
-    resizeVideo();
-});
+if( window.addEventListener ){
+    window.addEventListener( 'resize', function( event ){
+        resizeVideo();
+    });
+} else {
+    window.attachEvent( 'resize', function( event ){
+        resizeVideo();
+    });
+}
 
 resizeVideo();
+
+// Video json
+// http://vimeo.com/api/v2/video/60330142.json
