@@ -19,6 +19,10 @@ app.get( '/', function( req, res ){
     res.render( 'index' );
 });
 
+app.get( '/blog', function( req, res ){
+    res.render( 'blog' );
+});
+
 // Create Server
 http.createServer( app ).listen( app.get( 'port' ), function( ){
     console.log( 'Server listening on port ' + app.get( 'port' ) );

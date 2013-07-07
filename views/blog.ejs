@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog | Renee and Chad Schulz</title>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/racs.min.css" />
+
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <h1>
+                <span class="header-renee">Renee</span>
+                <span class="header-ampersand">&amp;</span>
+                <span class="header-chad">Chad</span>
+            </h1>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2>The Latest from Washington</h2>
+            <div id="blog-posts"></div>
+        </div>
+    </section>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/stream.min.js"></script>
+    <script>
+        var stream = new ActivityStream;
+
+        $.when( stream.tumblr() ).done( function( ){
+            $( '#activity-stream' ).html( stream.toString() );
+        });
+    </script>
+
+</body>
+</html>

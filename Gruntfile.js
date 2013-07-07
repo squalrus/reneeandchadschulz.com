@@ -10,6 +10,7 @@ module.exports = function( grunt ){
             ,dist: {
                 files: {
                      'public/js/script.min.js' : ['lib/script.js']
+                     ,'public/js/stream.min.js' : ['lib/Stream.js', 'lib/Stream.Tumblr.js']
                 }
             }
         }
