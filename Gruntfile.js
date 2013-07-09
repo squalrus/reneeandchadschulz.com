@@ -6,7 +6,10 @@ module.exports = function( grunt ){
 
          // Uglify JS
         ,uglify: {
-             options: { }
+             options: {
+                mangle: false
+                , beautify: true
+             }
             ,dist: {
                 files: {
                      'public/js/script.min.js' : ['lib/script.js']

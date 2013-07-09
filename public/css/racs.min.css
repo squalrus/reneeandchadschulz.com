@@ -16,12 +16,19 @@ h1{color:#F4F4F4;font-family:arial,helvetica,sans-serif;font-size:4.0em;font-wei
 h1 .header-chad{color:#444;display:inline-block;font-family:'Life Savers',cursive;font-size:1.1em;letter-spacing:-1px;margin-top:.2em;text-shadow:2px 2px 3px rgba(0,0,0,0.25);text-transform:uppercase;z-index:50}
 h1 .header-renee{color:#444;display:inline-block;font-family:'Life Savers',cursive;font-size:1.1em;letter-spacing:-1px;margin-top:.2em;text-shadow:2px 2px 3px rgba(0,0,0,0.25);text-transform:uppercase;z-index:50}
 h1 .header-schulz{color:#d3cabd;display:block;font-family:'Life Savers',cursive;font-size:.4em;letter-spacing:86px;position:relative;text-transform:uppercase;z-index:50}
-h2{color:#F4F4F4;font-family:'Life Savers',cursive;font-size:2.0em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-align:center;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
+h2{color:#F4F4F4;font-family:'Life Savers',cursive;font-size:2.0em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
+h4{color:#333;font-family:'Life Savers',cursive;font-size:1.6em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
 em{font-style:italic}
 strong{font-weight:900}
 section{margin-bottom:3.0em}
 iframe{-moz-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);-webkit-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);box-shadow:0 0 4px 4px rgba(0,0,0,0.25)}
 .container{margin:0 auto;width:960px}
+.main,.side{display:inline-block;float:left}
+.main{margin-right:20px;width:640px}
+.side{padding:10px 15px;width:270px}
+.sidebar{background-color:#74A6B5}
+.activity-entry{background-color:#fff;color:#333;display:block;margin-bottom:15px;padding:10px 15px;position:relative}.activity-entry .avatar{height:35px;position:absolute;right:4px;top:4px;width:35px}
+.activity-entry .date{color:#666;display:block;font-size:0.8em;font-style:italic}
 nav{background-color:#c7dbe1;border-bottom:3px solid #74a6b5;height:80px;width:100%;-moz-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);-webkit-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);box-shadow:0 0 4px 4px rgba(0,0,0,0.25)}nav h1{display:inline-block;margin:0}
 nav .info{color:#333;display:block;float:right;font-family:'Life Savers',cursive;font-size:1.2em;line-height:1.4em;margin-top:1.1em;text-align:right;text-transform:uppercase;width:300px;vertical-align:top}
 @media screen and (min-width:960px){}@media screen and (max-width:959px){.container{width:100%} nav h1{font-size:2.5em;margin:14px 0 0 20px} nav .info{display:none}}@media screen and (max-width:649px){}

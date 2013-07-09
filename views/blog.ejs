@@ -22,7 +22,18 @@
     <section>
         <div class="container">
             <h2>The Latest from Washington</h2>
-            <div id="blog-posts"></div>
+
+            <div class="main">
+                <div id="blog-posts"></div>
+            </div>
+
+            <div class="side sidebar">
+                <h4>Keep in touch!</h4>
+                <p>14628 NE 42nd Pl #208<br />
+                    Bellevue, WA 98007</p>
+                <p><a href="mailto:dodger08@gmail.com">dodger08@gmail.com</a></p>
+                <p><a href="mailto:chad.awesome@gmail.com">chad.awesome@gmail.com</a></p>
+            </div>
         </div>
     </section>
 
@@ -31,8 +42,11 @@
     <script>
         var stream = new ActivityStream;
 
-        $.when( stream.tumblr() ).done( function( ){
-            $( '#activity-stream' ).html( stream.toString() );
+        $.when(
+             stream.tumblr( 'rdodge85', 'http://25.media.tumblr.com/avatar_6caecd99a828_64.png' )
+            ,stream.tumblr( 'chadschulz', 'http://24.media.tumblr.com/avatar_8ace6c2d11f4_64.png' )
+        ).done( function( ){
+            $( '#blog-posts' ).html( stream.toString() );
         });
     </script>
 
