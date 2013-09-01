@@ -23,6 +23,10 @@ app.get( '/blog', function( req, res ){
     res.render( 'blog' );
 });
 
+app.get('/rsvp', function (req, res ) {
+    res.render('rsvp');
+});
+
 // Create Server
 http.createServer( app ).listen( app.get( 'port' ), function( ){
     console.log( 'Server listening on port ' + app.get( 'port' ) );
