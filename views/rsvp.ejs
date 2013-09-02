@@ -9,22 +9,32 @@
 </head>
 <body>
 
-    <nav>
-        <div class="container">
+    <header>
+        <div class="container-min">
             <h1>
-                <span class="header-renee">Renee</span>
-                <span class="header-ampersand">&amp;</span>
                 <span class="header-chad">Chad</span>
-                <!-- <span class="header-schulz">Schulz</span> -->
+                <span class="header-ampersand">&amp;</span>
+                <span class="header-renee">Renee</span>
             </h1>
-            <span class="info">Continue to check back!</span>
+            <div class="header-date">
+                <p>October</p>
+                <p>twenty-sixth</p>
+                <p>2&#8226;0&#8226;1&#8226;3</p>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <section>
-        <div class="container">
+        <div class="container-min">
 
-            <h2>Still working on this -- please check back to RSVP after Labor Day. Have a great weekend!</h2>
+            <form action="/send" method="post">
+                <label>
+                    Enter the names of all that will be attending. See you soon!
+                    <textarea name="rsvp" rows="10"></textarea>
+                </label>
+
+                <input type="submit" value="See you soon!" />
+            </form>
 
         </div>
     </section>

@@ -4,68 +4,48 @@ body {
     background: #333 url(../img/concrete_wall.png) 0px 0px repeat;
     color: #DDD;
     font-family: @font-standard;
-    font-size: 0.85em;
+    font-size: 16px;
 }
 
 p {
-    line-height: 1.6em;
-    margin: 1.0em 0;
+    line-height: 18px;
+    margin: 6px 0;
 }
 
 a { color: @byte-blue; }
 
 h1 {
     color: #F4F4F4;
-    font-family: @font-standard;
-    font-size: 4.0em;
+    font-family: @font-cursive;
+    font-size: 95px;
     font-weight: 400;
+    line-height: 95px;
+    margin: 40px 0;
+    text-align: center;
 
     .header-ampersand {
-        color: #888;
-        display: inline-block;
+        display: block;
         position: relative;
-        font-family: @font-ampersand;
-        font-size: 1.0em;
-        margin: .1em -8px 0;
+        font-size: 55px;
+        line-height: 55px;
+        margin: -45px 0 -10px 135px;
         z-index: 1;
     }
     .header-chad {
-        color: #444;
         display: inline-block;
-        font-family: @font-renee;
-        font-size: 1.1em;
         letter-spacing: -1px;
-        margin-top: .2em;
-        text-shadow: 2px 2px 3px rgba( 0, 0, 0, .25 );
-        text-transform: uppercase;
-        z-index: 50;
+        margin-left: -135px;
     }
     .header-renee {
-        color: #444;
-        display: inline-block;
-        font-family: @font-renee;
-        font-size: 1.1em;
-        letter-spacing: -1px;
-        margin-top: .2em;
-        text-shadow: 2px 2px 3px rgba( 0, 0, 0, .25 );
-        text-transform: uppercase;
-        z-index: 50;
-    }
-    .header-schulz {
-        color: @realist-beige;
         display: block;
-        font-family: @font-renee;
-        font-size: .4em;
-        letter-spacing: 86px;
-        position: relative;
-        text-transform: uppercase;
-        z-index: 50;
+        letter-spacing: -1px;
+        margin-left: 130px;
     }
 }
 
 h2 {
     color: #F4F4F4;
-    font-family: @font-renee;
+    font-family: @font-standard;
     font-size: 2.0em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -76,7 +56,7 @@ h2 {
 
 h4 {
     color: #333;
-    font-family: @font-renee;
+    font-family: @font-standard;
     font-size: 1.6em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -85,11 +65,35 @@ h4 {
     text-transform: uppercase;
 }
 
+// FORM
+label {
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+}
+textarea {
+    border-width: 1px;
+    display: block;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 2px;
+    width: 495px;
+}
+input[type="submit"] {
+    background-color: #DDD;
+    border: 1px solid #EEE;
+    display: block;
+    font-weight: 800;
+    margin: 20px auto;
+    padding: 8px 0;
+    width: 500px;
+}
+
 // STYLE ELEMENTS
 em { font-style: italic; }
 strong { font-weight: 900; }
 
 // LAYOUT
-section { margin-bottom: 3.0em; }
+section { margin: 40px 0; }
 
 iframe { .drop-shadow(); }

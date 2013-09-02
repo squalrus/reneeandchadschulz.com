@@ -1,14 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:900);
-@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
-@import url(http://fonts.googleapis.com/css?family=Life+Savers:700);
+@font-face {
+    font-family: 'AffairRegular';
+    src: url('../font/affair-webfont.eot');
+    src: url('../font/affair-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/affair-webfont.woff') format('woff'),
+         url('../font/affair-webfont.ttf') format('truetype'),
+         url('../font/affair-webfont.svg#affairregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@font-ampersand:    'Oleo Script Swash Caps', cursive;
-@font-chad:         'Raleway', sans-serif;
-@font-renee:        'Life Savers', cursive;
-@font-schulz:       'Raleway', sans-serif;
-
-@font-racs:         'Life Savers', cursive;
-@font-standard:     arial, helvetica, sans-serif;
+@font-cursive:      'AffairRegular', cursive;
+@font-standard:     Arial, Helvetica, sans-serif;
 
 @byte-blue:         rgb(199, 219, 225);
 @unique-gray:       rgb(203, 201, 204); // #D3CABD
@@ -23,22 +25,36 @@
 
 @import '_mixins';
 
-@media screen and (min-width: 960px) {
 
-}
+@media screen and (max-width: 600px) {
+    .container,
+    .container-min {
+        padding: 0 2%;
+        width: 96%;
 
-@media screen and (max-width: 959px) {
-    .container { width: 100%; }
-
-    nav {
-        h1 {
-            font-size: 2.5em;
-            margin: 14px 0 0 20px;
-        }
-        .info { display: none; }
+        label,
+        input,
+        textarea { width: 98%; }
     }
-}
 
-@media screen and (max-width: 649px) {
+    header {
+        h1 {
+            font-size: 40px;
+            margin: 15px 0 0;
 
+            .header-ampersand,
+            .header-renee,
+            .header-chad {
+                display: inline-block;
+                margin: 0;
+                font-size: 40px;
+            }
+        }
+
+        .header-date {
+            width: 100%;
+
+            p { font-size: 12px; padding: 1px 0; }
+        }
+    }
 }
