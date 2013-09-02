@@ -13,7 +13,6 @@ h1{color:#f4f4f4;font-family:'AffairRegular',Times New Roman Italic,cursive;font
 h1 .header-chad{display:inline-block;letter-spacing:-1px;margin-left:-135px}
 h1 .header-renee{display:block;letter-spacing:-1px;margin-left:130px}
 h2{color:#f4f4f4;font-family:'AffairRegular',Times New Roman Italic,cursive;font-size:40px;font-weight:400;line-height:50px;margin:20px 0;text-align:center}
-h4{color:#333;font-family:Arial,Helvetica,sans-serif;font-size:1.6em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
 label{display:block;margin:10px auto;width:500px}
 textarea{border-width:1px;display:block;font-size:16px;margin:10px auto;padding:2px;width:495px}
 input[type="submit"]{background-color:#DDD;border:1px solid #EEE;display:block;font-weight:800;margin:20px auto;padding:8px 0;width:500px}
@@ -27,10 +26,11 @@ iframe{display:block;margin:0 auto}
 .container-min{margin:0 auto;width:600px}
 .header-date{margin:-10px auto 0;width:300px}.header-date p{border-bottom:1px solid #F4F4F4;font-family:'ParmapetitRegular',Arial,Helvetica,sans-serif;font-size:16px;font-weight:800;letter-spacing:12px;line-height:18px;margin:0;padding:4px 0;text-align:center;text-transform:uppercase}
 .header-date p:last-child{border:none}
-.main,.side{display:inline-block;float:left}
-.main{margin-right:20px;width:640px}
-.side{padding:10px 15px;width:270px}
-.sidebar{background-color:#74A6B5}
-.activity-entry{background-color:#fff;color:#333;display:block;margin-bottom:15px;padding:10px 15px;position:relative}.activity-entry .avatar{height:35px;position:absolute;right:4px;top:4px;width:35px}
-.activity-entry .date{color:#666;display:block;font-size:0.8em;font-style:italic}
-@media screen and (min-width:601px) and (max-width:960px){.container{padding:0 2%;width:96%}.container iframe{height:400px;width:600px}}@media screen and (max-width:600px){.container,.container-min{padding:0 2%;width:96%}.container label,.container-min label,.container input,.container-min input,.container textarea,.container-min textarea{width:98%} .container iframe,.container-min iframe{height:189px;width:284px} header h1{font-size:40px;margin:15px 0 0}header h1 .header-ampersand,header h1 .header-renee,header h1 .header-chad{display:inline-block;margin:0;font-size:40px} header .header-date{width:100%}header .header-date p{font-size:12px;padding:1px 0}}
+.activity-entry{background-color:#F4F4F4;border:1px solid #DDD;color:#333;display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;margin-bottom:15px;padding:10px;position:relative}.activity-entry .tumblr-image{width:938px}
+.activity-entry h4{color:#333;font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:400;line-height:30px;margin:10px 0 20px}
+.activity-entry a{color:#666;display:inline;font-size:14px;margin:0}
+.activity-entry p,.activity-entry blockquote{font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;margin:10px auto;width:780px}
+.activity-entry ul{margin:10px auto;width:780px}.activity-entry ul li{margin:8px 0}
+.activity-entry .avatar{border:4px solid #f4f4f4;height:55px;position:absolute;right:0;top:0;width:55px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%}
+.activity-entry .date{color:#666;display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-style:italic;margin-top:20px;text-align:right}
+@media screen and (min-width:601px) and (max-width:960px){.container{padding:0 2%;width:96%}.container iframe{height:400px;width:600px} .activity-entry .tumblr-image,.activity-entry p,.activity-entry a,.activity-entry blockquote{width:538px}}@media screen and (max-width:600px){.container,.container-min{padding:0 2%;width:96%}.container label,.container-min label,.container input,.container-min input,.container textarea,.container-min textarea{width:98%} .container iframe,.container-min iframe{height:189px;width:284px} header h1{font-size:40px;margin:15px 0 0}header h1 .header-ampersand,header h1 .header-renee,header h1 .header-chad{display:inline-block;margin:0;font-size:40px} header .header-date{width:100%}header .header-date p{font-size:12px;padding:1px 0} .activity-entry{padding:4px}.activity-entry .tumblr-image,.activity-entry p,.activity-entry a,.activity-entry blockquote{width:281px}}
