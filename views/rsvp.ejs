@@ -26,21 +26,25 @@
         $('#submit').on('click', function (event) {
             event.preventDefault();
 
-            $.ajax({
-                url: '/send',
-                data: {
-                    rsvp: $('#rsvp').val()
-                },
-                type: 'POST',
-                success: function () {
-                    $('.rsvp-form').hide();
-                    $('.rsvp-success').show();
-                },
-                error: function () {
-                    $('.rsvp-form').hide();
+            var attendees = $('#rsvp').val();
 
-                }
-            });
+            if (attendees !== '') {
+                $.ajax({
+                    url: '/send',
+                    data: {
+                        rsvp: $('#rsvp').val()
+                    },
+                    type: 'POST',
+                    success: function () {
+                        $('.rsvp-form').hide();
+                        $('.rsvp-success').show();
+                    },
+                    error: function () {
+                        $('.rsvp-form').hide();
+
+                    }
+                });
+            }
         });
     })
 </script>

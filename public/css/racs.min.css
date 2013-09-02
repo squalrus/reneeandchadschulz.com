@@ -9,10 +9,10 @@ html{font-size:100%}
 body{background:#333 url(../img/concrete_wall.png) 0 0 repeat;color:#DDD;font-family:'ParmapetitRegular',Arial,Helvetica,sans-serif;font-size:26px}
 p{line-height:30px;margin:12px 0}
 a{color:#f4f4f4;display:block;font-size:45px;margin:25px 0;text-decoration:underline}
-h1{color:#f4f4f4;font-family:'AffairRegular',cursive;font-size:95px;font-weight:400;line-height:95px;margin:40px 0;text-align:center}h1 .header-ampersand{display:block;position:relative;font-size:55px;line-height:55px;margin:-45px 0 -10px 135px;z-index:1}
+h1{color:#f4f4f4;font-family:'AffairRegular',Times New Roman Italic,cursive;font-size:95px;font-weight:400;line-height:95px;margin:40px 0;text-align:center}h1 .header-ampersand{display:block;position:relative;font-size:55px;line-height:55px;margin:-45px 0 -10px 135px;z-index:1}
 h1 .header-chad{display:inline-block;letter-spacing:-1px;margin-left:-135px}
 h1 .header-renee{display:block;letter-spacing:-1px;margin-left:130px}
-h2{color:#f4f4f4;font-family:'AffairRegular',cursive;font-size:40px;font-weight:400;line-height:50px;margin:20px 0;text-align:center}
+h2{color:#f4f4f4;font-family:'AffairRegular',Times New Roman Italic,cursive;font-size:40px;font-weight:400;line-height:50px;margin:20px 0;text-align:center}
 h4{color:#333;font-family:Arial,Helvetica,sans-serif;font-size:1.6em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
 label{display:block;margin:10px auto;width:500px}
 textarea{border-width:1px;display:block;font-size:16px;margin:10px auto;padding:2px;width:495px}
