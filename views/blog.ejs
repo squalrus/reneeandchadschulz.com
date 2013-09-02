@@ -1,54 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Blog | Renee and Chad Schulz</title>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/racs.min.css" />
+<% include _header.html %>
 
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
+<section>
+    <div class="container">
+        <h2>The Latest from Washington</h2>
 
-    <nav>
-        <div class="container">
-            <h1>
-                <span class="header-renee">Renee</span>
-                <span class="header-ampersand">&amp;</span>
-                <span class="header-chad">Chad</span>
-            </h1>
+        <div class="main">
+            <div id="blog-posts"></div>
         </div>
-    </nav>
 
-    <section>
-        <div class="container">
-            <h2>The Latest from Washington</h2>
-
-            <div class="main">
-                <div id="blog-posts"></div>
-            </div>
-
-            <div class="side sidebar">
-                <h4>Keep in touch!</h4>
-                <p>14628 NE 42nd Pl #208<br />
-                    Bellevue, WA 98007</p>
-                <p><a href="mailto:dodger08@gmail.com">dodger08@gmail.com</a></p>
-                <p><a href="mailto:chad.awesome@gmail.com">chad.awesome@gmail.com</a></p>
-            </div>
+        <div class="side sidebar">
+            <h4>Keep in touch!</h4>
+            <p>14628 NE 42nd Pl #208<br />
+                Bellevue, WA 98007</p>
+            <p><a href="mailto:dodger08@gmail.com">dodger08@gmail.com</a></p>
+            <p><a href="mailto:chad.awesome@gmail.com">chad.awesome@gmail.com</a></p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script src="js/lib/jquery-1.10.2.min.js"></script>
-    <script src="js/stream.min.js"></script>
-    <script>
-        var stream = new ActivityStream;
+<script src="js/stream.min.js"></script>
+<script>
+    var stream = new ActivityStream;
 
-        $.when(
-             stream.tumblr( 'rdodge85', 'http://25.media.tumblr.com/avatar_6caecd99a828_64.png' )
-            ,stream.tumblr( 'chadschulz', 'http://24.media.tumblr.com/avatar_8ace6c2d11f4_64.png' )
-        ).done( function( ){
-            $( '#blog-posts' ).html( stream.toString() );
-        });
-    </script>
+    $.when(
+         stream.tumblr( 'rdodge85', 'http://25.media.tumblr.com/avatar_6caecd99a828_64.png' )
+        ,stream.tumblr( 'chadschulz', 'http://24.media.tumblr.com/avatar_8ace6c2d11f4_64.png' )
+    ).done( function( ){
+        $( '#blog-posts' ).html( stream.toString() );
+    });
+</script>
 
-</body>
-</html>
+<% include _footer.html %>

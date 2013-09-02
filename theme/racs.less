@@ -9,21 +9,47 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ParmapetitRegular';
+    src: url('../font/parmapetit-normal-webfont.eot');
+    src: url('../font/parmapetit-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/parmapetit-normal-webfont.woff') format('woff'),
+         url('../font/parmapetit-normal-webfont.ttf') format('truetype'),
+         url('../font/parmapetit-normal-webfont.svg#parmapetitregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-cursive:      'AffairRegular', cursive;
+@font-fancy:        'ParmapetitRegular', Arial, Helvetica, sans-serif;
 @font-standard:     Arial, Helvetica, sans-serif;
 
-@byte-blue:         rgb(199, 219, 225);
-@unique-gray:       rgb(203, 201, 204); // #D3CABD
-@realist-beige:     rgb(211, 202, 189);
+// @byte-blue:         rgb(199, 219, 225);
+// @unique-gray:       rgb(203, 201, 204); // #D3CABD
+// @realist-beige:     rgb(211, 202, 189);
+
+@color-white:       #F4F4F4;
 
 @import '_mixins';
 
 @import '_reset';
 @import '_main';
 @import '_layout';
-@import '_navigation';
 
 @import '_mixins';
+
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+    .container {
+        padding: 0 2%;
+        width: 96%;
+
+        iframe {
+            height: 400px;
+            width: 600px;
+        }
+    }
+}
 
 
 @media screen and (max-width: 600px) {
@@ -35,6 +61,11 @@
         label,
         input,
         textarea { width: 98%; }
+
+        iframe {
+            height: 189px;
+            width: 284px;
+        }
     }
 
     header {

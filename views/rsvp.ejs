@@ -1,45 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Save The Date | Renee and Chad Schulz</title>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/racs.min.css" />
+<% include _header.html %>
 
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
+<section>
+    <div class="container-min">
 
-    <header>
-        <div class="container-min">
-            <h1>
-                <span class="header-chad">Chad</span>
-                <span class="header-ampersand">&amp;</span>
-                <span class="header-renee">Renee</span>
-            </h1>
-            <div class="header-date">
-                <p>October</p>
-                <p>twenty-sixth</p>
-                <p>2&#8226;0&#8226;1&#8226;3</p>
-            </div>
-        </div>
-    </header>
-
-    <section>
-        <div class="container-min">
-
+        <div class="rsvp-form">
             <form action="/send" method="post">
-                <label>
-                    Enter the names of all that will be attending. See you soon!
-                    <textarea name="rsvp" rows="10"></textarea>
-                </label>
+                <p class="center">Enter the names of all that will be attending.</p>
+                <p class="center">Note: No dinner choice, served via stations.<br />Wedding is an adult affair.</p>
+                <textarea id="rsvp" name="rsvp" rows="10"></textarea>
 
-                <input type="submit" value="See you soon!" />
+                <input type="submit" id="submit" value="See you soon!" />
             </form>
-
         </div>
-    </section>
 
-    <script src="js/script.min.js"></script>
+        <div class="rsvp-success" style="display:none">
+            <p class="center">We got your info! You now have food and alchol reserved.</p>
+            <a href="/" class="center">Wedding Details</a>
+        </div>
 
-</body>
-</html>
+    </div>
+</section>
+
+<script>
+    $(function () {
+        $('#submit').on('click', function (event) {
+            event.preventDefault();
+
+            $.ajax({
+                url: '/send',
+                data: {
+                    rsvp: $('#rsvp').val()
+                },
+                type: 'POST',
+                success: function () {
+                    $('.rsvp-form').hide();
+                    $('.rsvp-success').show();
+                },
+                error: function () {
+                    $('.rsvp-form').hide();
+
+                }
+            });
+        });
+    })
+</script>
+
+<% include _footer.html %>

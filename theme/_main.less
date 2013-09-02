@@ -3,19 +3,25 @@ html { font-size: 100%; }
 body {
     background: #333 url(../img/concrete_wall.png) 0px 0px repeat;
     color: #DDD;
-    font-family: @font-standard;
-    font-size: 16px;
+    font-family: @font-fancy;
+    font-size: 26px;
 }
 
 p {
-    line-height: 18px;
-    margin: 6px 0;
+    line-height: 30px;
+    margin: 12px 0;
 }
 
-a { color: @byte-blue; }
+a {
+    color: @color-white;
+    display: block;
+    font-size: 45px;
+    margin: 25px 0;
+    text-decoration: underline;
+}
 
 h1 {
-    color: #F4F4F4;
+    color: @color-white;
     font-family: @font-cursive;
     font-size: 95px;
     font-weight: 400;
@@ -44,14 +50,13 @@ h1 {
 }
 
 h2 {
-    color: #F4F4F4;
-    font-family: @font-standard;
-    font-size: 2.0em;
+    color: @color-white;
+    font-family: @font-cursive;
+    font-size: 40px;
     font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0.6em 0;
-    text-shadow: 1px 1px 0px darken(#F4F4F4, 15%);
-    text-transform: uppercase;
+    line-height: 50px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 h4 {
@@ -61,7 +66,7 @@ h4 {
     font-weight: 400;
     letter-spacing: 1px;
     margin: 0.6em 0;
-    text-shadow: 1px 1px 0px darken(#F4F4F4, 15%);
+    text-shadow: 1px 1px 0px darken(@color-white, 15%);
     text-transform: uppercase;
 }
 
@@ -96,4 +101,14 @@ strong { font-weight: 900; }
 // LAYOUT
 section { margin: 40px 0; }
 
-iframe { .drop-shadow(); }
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.center { text-align: center; }
+
+.small {
+    font-size: 20px;
+    line-height: 22px;
+}

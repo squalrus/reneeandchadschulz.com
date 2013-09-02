@@ -1,4 +1,4 @@
-@font-face{font-family:'AffairRegular';src:url('../font/affair-webfont.eot');src:url('../font/affair-webfont.eot?#iefix') format('embedded-opentype'),url('../font/affair-webfont.woff') format('woff'),url('../font/affair-webfont.ttf') format('truetype'),url('../font/affair-webfont.svg#affairregular') format('svg');font-weight:normal;font-style:normal}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+@font-face{font-family:'AffairRegular';src:url('../font/affair-webfont.eot');src:url('../font/affair-webfont.eot?#iefix') format('embedded-opentype'),url('../font/affair-webfont.woff') format('woff'),url('../font/affair-webfont.ttf') format('truetype'),url('../font/affair-webfont.svg#affairregular') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'ParmapetitRegular';src:url('../font/parmapetit-normal-webfont.eot');src:url('../font/parmapetit-normal-webfont.eot?#iefix') format('embedded-opentype'),url('../font/parmapetit-normal-webfont.woff') format('woff'),url('../font/parmapetit-normal-webfont.ttf') format('truetype'),url('../font/parmapetit-normal-webfont.svg#parmapetitregular') format('svg');font-weight:normal;font-style:normal}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{line-height:1}
 ol,ul{list-style:none}
@@ -6,13 +6,13 @@ blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 table{border-collapse:collapse;border-spacing:0}
 html{font-size:100%}
-body{background:#333 url(../img/concrete_wall.png) 0 0 repeat;color:#DDD;font-family:Arial,Helvetica,sans-serif;font-size:16px}
-p{line-height:18px;margin:6px 0}
-a{color:#c7dbe1}
-h1{color:#F4F4F4;font-family:'AffairRegular',cursive;font-size:95px;font-weight:400;line-height:95px;margin:40px 0;text-align:center}h1 .header-ampersand{display:block;position:relative;font-size:55px;line-height:55px;margin:-45px 0 -10px 135px;z-index:1}
+body{background:#333 url(../img/concrete_wall.png) 0 0 repeat;color:#DDD;font-family:'ParmapetitRegular',Arial,Helvetica,sans-serif;font-size:26px}
+p{line-height:30px;margin:12px 0}
+a{color:#f4f4f4;display:block;font-size:45px;margin:25px 0;text-decoration:underline}
+h1{color:#f4f4f4;font-family:'AffairRegular',cursive;font-size:95px;font-weight:400;line-height:95px;margin:40px 0;text-align:center}h1 .header-ampersand{display:block;position:relative;font-size:55px;line-height:55px;margin:-45px 0 -10px 135px;z-index:1}
 h1 .header-chad{display:inline-block;letter-spacing:-1px;margin-left:-135px}
 h1 .header-renee{display:block;letter-spacing:-1px;margin-left:130px}
-h2{color:#F4F4F4;font-family:Arial,Helvetica,sans-serif;font-size:2.0em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
+h2{color:#f4f4f4;font-family:'AffairRegular',cursive;font-size:40px;font-weight:400;line-height:50px;margin:20px 0;text-align:center}
 h4{color:#333;font-family:Arial,Helvetica,sans-serif;font-size:1.6em;font-weight:400;letter-spacing:1px;margin:0.6em 0;text-shadow:1px 1px 0 #cecece;text-transform:uppercase}
 label{display:block;margin:10px auto;width:500px}
 textarea{border-width:1px;display:block;font-size:16px;margin:10px auto;padding:2px;width:495px}
@@ -20,10 +20,12 @@ input[type="submit"]{background-color:#DDD;border:1px solid #EEE;display:block;f
 em{font-style:italic}
 strong{font-weight:900}
 section{margin:40px 0}
-iframe{-moz-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);-webkit-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);box-shadow:0 0 4px 4px rgba(0,0,0,0.25)}
+iframe{display:block;margin:0 auto}
+.center{text-align:center}
+.small{font-size:20px;line-height:22px}
 .container{margin:0 auto;width:960px}
 .container-min{margin:0 auto;width:600px}
-.header-date{margin:-10px auto 0;width:300px}.header-date p{border-bottom:1px solid #F4F4F4;font-size:16px;font-weight:800;letter-spacing:12px;line-height:18px;margin:0;padding:4px 0;text-align:center;text-transform:uppercase}
+.header-date{margin:-10px auto 0;width:300px}.header-date p{border-bottom:1px solid #F4F4F4;font-family:'ParmapetitRegular',Arial,Helvetica,sans-serif;font-size:16px;font-weight:800;letter-spacing:12px;line-height:18px;margin:0;padding:4px 0;text-align:center;text-transform:uppercase}
 .header-date p:last-child{border:none}
 .main,.side{display:inline-block;float:left}
 .main{margin-right:20px;width:640px}
@@ -31,4 +33,4 @@ iframe{-moz-box-shadow:0 0 4px 4px rgba(0,0,0,0.25);-webkit-box-shadow:0 0 4px 4
 .sidebar{background-color:#74A6B5}
 .activity-entry{background-color:#fff;color:#333;display:block;margin-bottom:15px;padding:10px 15px;position:relative}.activity-entry .avatar{height:35px;position:absolute;right:4px;top:4px;width:35px}
 .activity-entry .date{color:#666;display:block;font-size:0.8em;font-style:italic}
-@media screen and (max-width:600px){.container,.container-min{padding:0 2%;width:96%}.container label,.container-min label,.container input,.container-min input,.container textarea,.container-min textarea{width:98%} header h1{font-size:40px;margin:15px 0 0}header h1 .header-ampersand,header h1 .header-renee,header h1 .header-chad{display:inline-block;margin:0;font-size:40px} header .header-date{width:100%}header .header-date p{font-size:12px;padding:1px 0}}
+@media screen and (min-width:601px) and (max-width:960px){.container{padding:0 2%;width:96%}.container iframe{height:400px;width:600px}}@media screen and (max-width:600px){.container,.container-min{padding:0 2%;width:96%}.container label,.container-min label,.container input,.container-min input,.container textarea,.container-min textarea{width:98%} .container iframe,.container-min iframe{height:189px;width:284px} header h1{font-size:40px;margin:15px 0 0}header h1 .header-ampersand,header h1 .header-renee,header h1 .header-chad{display:inline-block;margin:0;font-size:40px} header .header-date{width:100%}header .header-date p{font-size:12px;padding:1px 0}}
