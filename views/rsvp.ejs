@@ -4,12 +4,18 @@
     <div class="container-min">
 
         <div class="rsvp-form">
-            <form action="/send" method="post">
-                <p class="center">Enter the names of all that will be attending.</p>
+            <form action="/send" method="post" class="form">
+                <p class="center">Enter the names of all that will/won't be attending.</p>
                 <p class="center">Note: No dinner choice, served via stations.<br />Wedding is an adult affair.</p>
-                <textarea id="rsvp" name="rsvp" rows="10"></textarea>
+                <label>
+                    <input type="radio" name="attendance" value="Can't wait to see you!" checked="checked" /> Can't wait to see you! <span class="plain">:)</span>
+                </label>
+                <label>
+                    <input type="radio" name="attendance" value="Unfortanately we can't make it." /> Unfortanately we can't make it. <span class="plain">:(</span>
+                </label>
+                <textarea name="rsvp" rows="10"></textarea>
 
-                <input type="submit" id="submit" value="See you soon!" />
+                <input type="submit" id="submit" value="Send!" />
             </form>
         </div>
 
@@ -32,7 +38,8 @@
                 $.ajax({
                     url: '/send',
                     data: {
-                        rsvp: $('#rsvp').val()
+                        rsvp: $('.form textarea').val(),
+                        attendance: $('.form input[type="radio"]:checked').val()
                     },
                     type: 'POST',
                     success: function () {

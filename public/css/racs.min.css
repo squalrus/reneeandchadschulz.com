@@ -20,6 +20,7 @@ em{font-style:italic}
 strong{font-weight:900}
 section{margin:40px 0}
 iframe{display:block;margin:0 auto}
+.plain{font-family:monospace}
 .center{text-align:center}
 .small{font-size:20px;line-height:22px}
 .container{margin:0 auto;width:960px}

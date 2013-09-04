@@ -45,11 +45,11 @@ app.post('/send', function (req, res) {
     });
 
     opts = {
-        from: "RSVP <rsvp@reneeandchadschulz.com>", // sender address
-        to: nconf.get('EMAIL_TO'),                  // list of receivers
-        subject: "New Wedding RSVP!",               // Subject line
-        text: req.body.rsvp,                        // plaintext body
-        html: req.body.rsvp                         // html body
+        from: "RSVP <rsvp@reneeandchadschulz.com>",                                             // sender address
+        to: nconf.get('EMAIL_TO'),                                                              // list of receivers
+        subject: "New Wedding RSVP!",                                                           // Subject line
+        text: "Name/Note: " + req.body.rsvp + "\n\nAttendance: " + req.body.attendance,         // plaintext body
+        html: "Name/Note: " + req.body.rsvp + "<br /><br />Attendance: " + req.body.attendance  // html body
     };
 
     smtp.sendMail(opts, function (err, res) {
